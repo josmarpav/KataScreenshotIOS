@@ -328,7 +328,7 @@
 				TargetAttributes = {
 					4915B38C1E0C25870056AE6A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BD48FG9BMV;
+						DevelopmentTeam = 84Y7Q74F6N;
 						ProvisioningStyle = Automatic;
 					};
 					4915B3B31E0C26340056AE6A = {
@@ -392,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6C84651C223C6FD1B1F4019F /* [CP] Copy Pods Resources */ = {
@@ -422,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CE675A20FA2FB1A0774CA376 /* [CP] Embed Pods Frameworks */ = {
@@ -625,10 +625,10 @@
 			baseConfigurationReference = D15EB0AC3D833AA2F63CBCB6 /* Pods-KataScreenshot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BD48FG9BMV;
+				DEVELOPMENT_TEAM = 84Y7Q74F6N;
 				INFOPLIST_FILE = KataScreenshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataScreenshot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markezsoft.KataScreenshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -639,10 +639,10 @@
 			baseConfigurationReference = 4226A96F0DDBC63CB44010CB /* Pods-KataScreenshot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BD48FG9BMV;
+				DEVELOPMENT_TEAM = 84Y7Q74F6N;
 				INFOPLIST_FILE = KataScreenshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataScreenshot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markezsoft.KataScreenshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

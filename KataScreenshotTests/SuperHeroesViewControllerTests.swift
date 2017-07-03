@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KIF
 @testable import KataScreenshot
 
 class SuperHeroesViewControllerTests: ScreenshotTest {
@@ -16,8 +17,24 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
     func testShowsEmptyCase() {
         givenThereAreNoSuperHeroes()
 
-        let viewController = getSuperHeroDetailViewController()
+        let viewController = getSuperHeroesViewController()
 
+        verify(viewController: viewController)
+    }
+    
+    func testShowListSuperHeros() {
+        _ = givenThereAreSomeSuperHeroes(10)
+        
+        let viewController = getSuperHeroesViewController()
+        
+        verify(viewController: viewController)
+    }
+    
+    func testShowSuperHerosWithBadge() {
+        _ = givenThereAreSomeAvengers()
+        
+        let viewController = getSuperHeroesViewController()
+        
         verify(viewController: viewController)
     }
 
@@ -42,7 +59,7 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
         return superHeroes
     }
 
-    fileprivate func getSuperHeroDetailViewController() -> UIViewController {
+    fileprivate func getSuperHeroesViewController() -> UIViewController {
         let superHeroesViewController = ServiceLocator()
             .provideSuperHeroesViewController() as! SuperHeroesViewController
         superHeroesViewController.presenter = SuperHeroesPresenter(

@@ -5,6 +5,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - KIF (3.5.2):
+    - KIF/Core (= 3.5.2)
+  - KIF/Core (3.5.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -12,13 +15,15 @@ PODS:
 DEPENDENCIES:
   - BothamUI (~> 2.0)
   - FBSnapshotTestCase
+  - KIF
   - SDWebImage
 
 SPEC CHECKSUMS:
   BothamUI: 5d1073124d4b14e32868a3eeb37509f1e8a73638
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  KIF: f2a6025bb3f11692df675054a134d43a9ec2d7db
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 69a2d50894c9a13a882c3c8c6274ba10e3344835
+PODFILE CHECKSUM: b8fb71661c8252d399b71b779e701533e1e9c50b
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
